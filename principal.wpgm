@@ -13,6 +13,8 @@ program PepitaGame {
     game.addVisual(paredDer1)
     game.addVisual(paredDer2)
 
+
+
     //colsiones de personaje con pared
 
     game.whenCollideDo(personaje, { pared => pared.noPasa(personaje)})
