@@ -1,0 +1,21 @@
+import wollok.game.*
+import cosas.*
+
+
+program PepitaGame {
+	game.title("Pepita")
+	game.height(10)
+	game.width(10)
+    
+    game.addVisualCharacter(personaje)
+    game.addVisual(paredIzq1)
+    game.addVisual(paredIzq2)
+    game.addVisual(paredDer1)
+    game.addVisual(paredDer2)
+
+    //colsiones de personaje con pared
+
+    game.whenCollideDo(personaje, { pared => pared.noPasa(personaje)})
+
+	game.start()
+}
